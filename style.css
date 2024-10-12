@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid:
+        "cabecalho cabecalho cabecalho" 100px
+        "esquerda meio direita" 350px
+        "rodape rodape rodape" 100px / 100px auto 60px;
+    grid-gap: 10px;    
+    text-align: center;
+}
+
+.cabecalho {
+    background-color: #15dfdf63;
+    grid-area: cabecalho;
+}
+
+.menu {
+    background-color: #bd56ac72;
+    grid-area: esquerda;
+}
+
+.secao-principal {
+    background-color: #3fb42d54;
+    grid-area: meio;
+}
+
+.aside {
+    background-color: #e3fc0185;
+    grid-area: direita;
+}
+
+.rodape {
+    background-color: #c9371675;
+    grid-area: rodape;
+}
